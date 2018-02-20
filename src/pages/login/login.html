@@ -1,0 +1,43 @@
+<ion-header>
+<ion-navbar>
+  <!-- add '      ' to show menu  -->
+      <button ion-button icon-only menuToggle  >
+        <ion-icon name="ios-arrow-back-outline"></ion-icon>
+      </button>
+</ion-navbar>
+</ion-header>
+<ion-content class="background">
+  <h1>Hanimo</h1>
+
+  <ion-card>
+    <ion-card-header>
+      
+      Se Connecter
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-item>
+          <ion-label floating>Nom d'utilisateur</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Mot de passe</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+            <p> mot de passe oublié? <a> le récupérer d'ici </a></p>
+        </ion-item>
+        <button ion-button color="danger" block outline>Se Connecter</button>
+      </ion-list>
+      <b> Ou </b>
+      <button ion-button color="Primary" block icon-left>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <div>Se connecter avec Facebook</div>
+      </button>
+      <button ion-button color="danger" block icon-left>
+          <ion-icon name="logo-google"></ion-icon>
+          <div>Se Connecter avec Google</div>
+        </button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
