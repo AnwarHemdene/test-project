@@ -1,5 +1,8 @@
 <ion-header>
   <ion-navbar  color="primary">
+      <button ion-button icon-only menuToggle  >
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title>
       Invitations
     </ion-title>
@@ -7,10 +10,28 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Invitations en attentes</ion-list-header>
-    <ion-item>
-     
-    </ion-item>
-  </ion-list>
+    <ion-list>
+
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/test.jpeg">
+          </ion-thumbnail>
+          <h2>Invitation 1 </h2>
+          <p>Animal lover1</p>
+          <button ion-button clear item-end>Accept</button>
+          <button ion-button clear item-end>Decline</button>
+        </ion-item>
+    
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/test.jpeg">
+          </ion-thumbnail>
+          <h2>Invitation 2 </h2>
+          <p>Animal lover2</p>
+          
+          <button ion-button clear item-end>Accept</button>
+          <button ion-button clear item-end>Decline</button>
+        </ion-item>
+    
+      </ion-list>
 </ion-content>

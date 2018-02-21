@@ -1,0 +1,45 @@
+
+    <ion-header  >
+      <ion-navbar  color="primary">
+        <button ion-button icon-only menuToggle  >
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title>Parametres</ion-title>
+      </ion-navbar>
+      
+    </ion-header>
+
+<ion-content>
+        <ion-item-group>
+                <ion-item-divider color="light">Edit profile</ion-item-divider>
+                <ion-item>
+                        <ion-label floating>Display Name</ion-label>
+                        <ion-input type="text" placeholder=""></ion-input>
+                    </ion-item>
+                    <ion-item>
+                            <ion-label floating>Phone Number</ion-label>
+                            <ion-input type="tel" placeholder=""></ion-input>
+                    </ion-item>
+                    <ion-item>
+                            <ion-label floating>Bio</ion-label>
+                        <ion-textarea></ion-textarea>
+                    </ion-item>
+                    <br>
+                        <button ion-button  color="primary" id="wraper"> Change Photo</button>
+                        <ion-item></ion-item>
+
+        </ion-item-group>
+        <ion-item-group>
+                <ion-item-divider color="light">Changer Mot de passe</ion-item-divider>
+                <ion-item>
+                    <ion-input type="password" placeholder="old password"></ion-input>
+                </ion-item>
+                <ion-item>
+                        <ion-input type="password" placeholder="new password"></ion-input>
+                </ion-item>
+                <ion-item>
+                        <ion-input type="password" placeholder="Confirm new password"></ion-input>
+                </ion-item>
+        </ion-item-group>
+        
+</ion-content>

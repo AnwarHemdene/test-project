@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/login/login';
 import { MessagesPage } from '../pages/messages/messages';
 import { InvitationsPage } from '../pages/invitations/invitations';
 import { PosterPage } from '../pages/poster/poster';
+import { ParamsPage } from '../pages/params/params';
 import { TabsPage } from '../pages/tabs/tabs';
 
 
@@ -16,18 +17,20 @@ import { TabsPage } from '../pages/tabs/tabs';
   templateUrl: 'app.html'
 })
 export class MyApp {
+
+
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = TabsPage;
 
   pages: Array<{title: string, component: any}>;
-
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'Paramètres', component: ParamsPage },
       { title: 'Se Connecter', component: LoginPage },
       { title: 'Messages', component: MessagesPage },
       { title: 'Poster', component: PosterPage }
@@ -50,4 +53,5 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+  
 }

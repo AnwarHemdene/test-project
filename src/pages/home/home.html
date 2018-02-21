@@ -9,6 +9,87 @@
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 </ion-header>
 
-<ion-content padding>
 
+<ion-content class="cards-bg social-cards">
+
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/imgs/avatar.jpg">
+    </ion-avatar>
+    <h2>Username</h2>
+    <p>System.date</p>
+  </ion-item>
+
+  <img src="assets/imgs/test.jpeg">
+
+  <ion-card-content>
+    <p>test test test test test bla bla bla bla .</p>
+  </ion-card-content>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='thumbs-up'></ion-icon>
+        Like
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button color="primary" clear small icon-start>
+        <ion-icon name='text'></ion-icon>
+        Comment
+      </button>
+    </ion-col>
+    <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='bookmarks'></ion-icon>
+          Bookmark
+        </button>
+      </ion-col>
+    <!-- <ion-col> -->
+      <ion-fab top right >
+        <button ion-fab color="vibrant" mini><ion-icon name="share"></ion-icon></button>
+        <ion-fab-list>
+          <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+          <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+          <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+          <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+    <!-- </ion-col> -->
+  </ion-row>
+</ion-grid>
+</ion-card>
+
+
+
+
+
+
+
+
+
+<!-- 
+    <img src="assets/img/bjork-live.jpg"/>
+
+    <ion-card-content>
+      <ion-card-title>
+       UserName
+      </ion-card-title>
+      <p>
+        first came to prominence as one of the lead vocalists of the avant pop Icelandic sextet the Sugarcubes, but when...
+      </p>
+<br><br><br>
+  <ion-fab right bottom >
+      <button ion-fab><ion-icon name="arrow-dropleft" ></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab><ion-icon name="ios-thumbs-up"></ion-icon></button>
+        <button ion-fab><ion-icon name="md-text"></ion-icon></button>
+        <button ion-fab><ion-icon name="md-share"></ion-icon></button>
+        <button ion-fab><ion-icon name="md-bookmark"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+</ion-card-content>
+</ion-card> -->
 </ion-content>

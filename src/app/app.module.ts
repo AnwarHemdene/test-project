@@ -11,10 +11,10 @@ import { MessagesPage } from '../pages/messages/messages';
 import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ParamsPage } from '../pages/params/params';
 
 
 
-import {GoogleMaps} from '@ionic-native/google-maps';
 
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     InvitationsPage,
     PosterPage,
     MessagesPage,
+    ParamsPage,
     TabsPage
   ],
   imports: [
@@ -38,12 +39,12 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     InvitationsPage,
     PosterPage,
     MessagesPage,
+    ParamsPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    GoogleMaps,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
