@@ -9,6 +9,7 @@ import { MessagesPage } from '../pages/messages/messages';
 import { InvitationsPage } from '../pages/invitations/invitations';
 import { PosterPage } from '../pages/poster/poster';
 import { ParamsPage } from '../pages/params/params';
+import { InscrirePage } from '../pages/inscrire/inscrire';
 import { TabsPage } from '../pages/tabs/tabs';
 
 
@@ -34,7 +35,9 @@ export class MyApp {
       { title: 'Se Connecter', component: LoginPage },
       { title: 'Messages', component: MessagesPage },
       { title: 'Poster', component: PosterPage }
-      ,{ title: 'Invitations', component: InvitationsPage }
+      ,{ title: 'Invitations', component: InvitationsPage },
+      { title: 'Inscrire', component: InscrirePage }
+      
     ];
 
   }

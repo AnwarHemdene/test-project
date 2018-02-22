@@ -1,0 +1,45 @@
+page-inscrire {
+    .background{background: linear-gradient(10deg,#d0d0d0	,#f9d9d9,#cdf5f9,#e8f4cc);
+        
+
+        // ,#638187, #575567	, #926b6b, #b79696
+        // ,#75b9ba, #e5e5cc,  #d8c7a6, #cca5a3	, #90877c
+    
+        // 10deg,	
+        // url(../../assets/imgs/bg2.jpeg);
+
+        width: 100%;
+        height: 100%;
+    }
+    .scroll-content{
+        text-align: justify;
+    }
+    ion-card.card{
+        background: rgba(232, 230, 230, 0px);
+        border-radius: 10px;
+    }
+    .item {
+        background: rgba(232, 230, 230, 0px);
+        color: #000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+    }
+    item-md{
+        color: #000;
+    }
+    ion-input{
+        border-bottom: rgb(255, 255, 255) solid 1px;
+    }
+    ion-navbar {
+        background: rgba(232, 230, 230, 0px);
+        opacity: 0;
+        
+    }
+    ion-title{
+        color: #000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+    .bar-button{
+        color: #ffffff;}
+}
