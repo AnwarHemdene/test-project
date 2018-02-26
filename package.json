@@ -44,7 +44,9 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROID": "AIzaSyChEvBdExzSKenCAlsweoRpKJuqOe5SvMU"
+        "API_KEY_FOR_ANDROID": "AIzaSyChEvBdExzSKenCAlsweoRpKJuqOe5SvMU",
+        "PLAY_SERVICES_VERSION": "11.8.0",
+        "ANDROID_SUPPORT_V4_VERSION": "24.1.0"
       },
       "cordova-plugin-geolocation": {}
     }

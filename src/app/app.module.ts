@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InscrirePage } from '../pages/inscrire/inscrire';
 
+import { ProfilePage } from '../pages/profile/profile';
 import { ParamsPage } from '../pages/params/params';
 
 
@@ -28,7 +29,8 @@ import { ParamsPage } from '../pages/params/params';
     MessagesPage,
     ParamsPage,
     TabsPage,
-    InscrirePage
+    InscrirePage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { ParamsPage } from '../pages/params/params';
     MessagesPage,
     ParamsPage,
     TabsPage,
-    InscrirePage
+    InscrirePage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
