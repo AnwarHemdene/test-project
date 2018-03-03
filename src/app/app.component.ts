@@ -3,6 +3,8 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+// import * as firebase from 'firebase';
+
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { MessagesPage } from '../pages/messages/messages';
@@ -14,6 +16,14 @@ import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 
 
+// var config = {
+//   apiKey: "AIzaSyA0nurCWrrVte-Ii6xZIs2ZCQ0mvJMcM7Y",
+//   authDomain: "chatapp-7904c.firebaseapp.com",
+//   databaseURL: "https://chatapp-7904c.firebaseio.com",
+//   projectId: "chatapp-7904c",
+//   storageBucket: "chatapp-7904c.appspot.com",
+//   messagingSenderId: "969720234977"
+// };
 
 @Component({
   templateUrl: 'app.html'
@@ -27,8 +37,8 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+    // firebase.initializeApp(config);
     this.initializeApp();
-
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },

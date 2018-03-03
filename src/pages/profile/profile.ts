@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
-
+  content: string = "content";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

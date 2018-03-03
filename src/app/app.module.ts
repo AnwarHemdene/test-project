@@ -15,7 +15,8 @@ import { InscrirePage } from '../pages/inscrire/inscrire';
 
 import { ProfilePage } from '../pages/profile/profile';
 import { ParamsPage } from '../pages/params/params';
-
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
+// import { AngularFireModule } from 'angularfire2';
 
 
 
@@ -31,10 +32,12 @@ import { ParamsPage } from '../pages/params/params';
     TabsPage,
     InscrirePage,
     ProfilePage
+    // ChatPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
+    // AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -48,6 +51,7 @@ import { ParamsPage } from '../pages/params/params';
     TabsPage,
     InscrirePage,
     ProfilePage
+    //  ChatPage
   ],
   providers: [
     StatusBar,
