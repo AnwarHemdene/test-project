@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, Config } from 'ionic-angular';
 
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
@@ -9,15 +11,19 @@ import { InvitationsPage } from '../pages/invitations/invitations';
 import { PosterPage } from '../pages/poster/poster';
 import { MessagesPage } from '../pages/messages/messages';
 import { TabsPage } from '../pages/tabs/tabs';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 import { InscrirePage } from '../pages/inscrire/inscrire';
-
+// import { ChatPage } from '../pages/chat/chat';
 import { ProfilePage } from '../pages/profile/profile';
 import { ParamsPage } from '../pages/params/params';
-// import { AngularFireDatabaseModule } from 'angularfire2/database';
-// import { AngularFireModule } from 'angularfire2';
+ import { AngularFireModule } from 'angularfire2';
 
+ import { AngularFireDatabaseModule } from 'angularfire2/database';
+ import { FIREBASE_CREDENTIALS } from './firebase.credentials';
+ 
+
+import { ContentListPage } from '../pages/private-content-pages/content-list/content-list';
+import { AddContentPage } from '../pages/private-content-pages/add-content/add-content';
+import { EditContentItemPage } from '../pages/private-content-pages/edit-content-item/edit-content-item';
 
 
 @NgModule({
@@ -31,13 +37,20 @@ import { ParamsPage } from '../pages/params/params';
     ParamsPage,
     TabsPage,
     InscrirePage,
-    ProfilePage
-    // ChatPage
+    ProfilePage,
+    // ChatPage,
+    ContentListPage,
+    AddContentPage,
+    EditContentItemPage
+
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
-    // AngularFireDatabaseModule
+    IonicModule.forRoot(MyApp),
+         // Initialise AngularFire with credientials from the dashboard
+         AngularFireModule.initializeApp(FIREBASE_CREDENTIALS),
+         // Import the AngularFireDatabaseModule to use database interactions
+         AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,8 +63,11 @@ import { ParamsPage } from '../pages/params/params';
     ParamsPage,
     TabsPage,
     InscrirePage,
-    ProfilePage
-    //  ChatPage
+    ProfilePage,
+    // ChatPage,
+    ContentListPage,
+    AddContentPage,
+    EditContentItemPage
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,27 @@
+
+<ion-header>
+ 
+  <ion-navbar color="primary">
+    <ion-title>Content List</ion-title>
+    <ion-buttons end> 
+      <button ion-button icon-only 
+      (click)="navigateToAddContentPage()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <!-- Repeat the ion-item for as many items that we have inside of our Content list. -->
+    <ion-item *ngFor="let item of items" (click)="selectContentItem(item)">
+      <h2>Content Name: {{item.itemName}}</h2>
+      <h3>Description: {{item.itemContent}}</h3>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

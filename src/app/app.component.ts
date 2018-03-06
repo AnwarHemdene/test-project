@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-// import * as firebase from 'firebase';
+ import * as firebase from 'firebase';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
@@ -13,17 +13,15 @@ import { PosterPage } from '../pages/poster/poster';
 import { ParamsPage } from '../pages/params/params';
 import { InscrirePage } from '../pages/inscrire/inscrire';
 import { ProfilePage } from '../pages/profile/profile';
+// import { ChatPage } from '../pages/chat/chat';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { ContentListPage } from '../pages/private-content-pages/content-list/content-list';
+import { AddContentPage } from '../pages/private-content-pages/add-content/add-content';
+import { EditContentItemPage } from '../pages/private-content-pages/edit-content-item/edit-content-item';
 
-// var config = {
-//   apiKey: "AIzaSyA0nurCWrrVte-Ii6xZIs2ZCQ0mvJMcM7Y",
-//   authDomain: "chatapp-7904c.firebaseapp.com",
-//   databaseURL: "https://chatapp-7904c.firebaseio.com",
-//   projectId: "chatapp-7904c",
-//   storageBucket: "chatapp-7904c.appspot.com",
-//   messagingSenderId: "969720234977"
-// };
+
+
 
 @Component({
   templateUrl: 'app.html'
@@ -48,7 +46,10 @@ export class MyApp {
       { title: 'Poster', component: PosterPage }
       ,{ title: 'Invitations', component: InvitationsPage },
       { title: 'Inscrire', component: InscrirePage },
-      { title: 'Profile', component: ProfilePage }
+      { title: 'Profile', component: ProfilePage },
+      // { title: 'ChatRoom', component: ChatPage },
+      { title: 'Private Content', component: ContentListPage }
+
       
     ];
 
