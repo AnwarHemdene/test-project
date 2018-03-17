@@ -1,36 +1,43 @@
 <ion-header>
-    <ion-navbar  color="primary">
-          <button ion-button icon-only menuToggle  >
-            <ion-icon name="menu"></ion-icon>
-          </button>
-          <ion-title> Poster une annonce</ion-title>
-    </ion-navbar>
-
-    
-
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <ion-card-content>
-        <ion-list no-lines>
-            <ion-list-header> Poster votre annonce </ion-list-header>  
-            <ion-item>
-              <ion-label floating >Votre description</ion-label>
-              <ion-input type="text"> </ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label floating>Type d'annonce</ion-label>
-                <ion-select [(ngModel)]="typeAnnonce" (ngModelChange)="presentConfirm(typeAnnonce)">
-                  <ion-option value="type0">type 0</ion-option>
-                  <ion-option value="type1">type 1</ion-option>
-                  <ion-option value="type2">type 2</ion-option>
-                  <ion-option value="type3">type 3</ion-option>
-                </ion-select>
-            </ion-item>
-            <ion-item>
-            </ion-item>
-          </ion-list>
-    </ion-card-content>
-  </ion-card>
+<ion-content padding>
+  <ion-list>
+    <ion-item class="aide" (click)="presentPrompt()">
+      <ion-thumbnail item-start>
+        <ion-icon name="md-paw"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Animal besoin d'aide</h2>
+    </ion-item>
+    <ion-item class="foyer" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+        <ion-icon name="ios-home"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Animal cherchant un foyer</h2>
+    </ion-item>
+    <ion-item class="blessure" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+        <ion-icon name="md-medkit"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Blessure ou Maladie</h2>
+    </ion-item>
+    <ion-item class="danger" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+        <ion-icon name="ios-nuclear"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Animal en Danger</h2> 
+    </ion-item>
+    <ion-item class="autre" (click)="presentPrompt()" >
+      <ion-thumbnail item-start>
+         <ion-icon name="ios-alert"  isActive="false"></ion-icon>
+      </ion-thumbnail>
+      <h2>Autre</h2>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

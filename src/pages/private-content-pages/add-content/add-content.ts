@@ -14,7 +14,6 @@ export class AddContentPage {
   contentItem = {} as ContentItem;
 
   // contentItemRef$: AngularFireList<ContentItem[]>
-
   constructor(public navCtrl: NavController, public navParams: NavParams, 
     private afdatabase: AngularFireDatabase) {
      this.afdatabase.list('/content-list').valueChanges();

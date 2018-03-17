@@ -58,10 +58,13 @@
         </ion-list>
     
         <ion-list *ngSwitchCase="'private-content'">
-          <ion-item>
-           
-            <h2>Element2</h2>
-          </ion-item>
+
+            <!-- Repeat the ion-item for as many items that we have inside of our Content list. -->
+            <ion-item *ngFor="let item of items" (click)="selectContentItem(item)">
+              <h2>Content Name: {{item.itemName}}</h2>
+              <h3>Description: {{item.itemContent}}</h3>
+            </ion-item>
+
         </ion-list>
     
         <ion-list *ngSwitchCase="'about'">

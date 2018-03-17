@@ -1,4 +1,29 @@
 
 page-poster {
+        ion-icon::before {
+            display: inline-block;
+            font-size: 450%;
+        }
+       
+        .aide{
+            background: rgba(224, 253, 28, 0.35);
+            
+        }
+        .foyer{
+            background: rgba(145, 202, 77 , 0.37);
+            
+        }
+        .blessure{
+            background: rgba(243, 208, 97 , 0.43);
+            
+        }
+        .danger{
+            background: rgba(255, 6 , 6 , 0.37);
+            
+        }
+        .autre{
+            background: rgba(148, 186, 222, 0.37);
+            
+        }
 
 }

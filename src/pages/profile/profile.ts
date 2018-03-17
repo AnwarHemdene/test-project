@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 /**
  * Generated class for the ProfilePage page.
@@ -14,8 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
+  items: any;
   content: string = "content";
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private afdatabase: AngularFireDatabase) {
+    this.afdatabase.list<any>('content-list').valueChanges().subscribe(data=> { this.items = data});
   }
 
   ionViewDidLoad() {

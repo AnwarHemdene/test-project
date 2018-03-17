@@ -24,6 +24,7 @@ import { ParamsPage } from '../pages/params/params';
 import { ContentListPage } from '../pages/private-content-pages/content-list/content-list';
 import { AddContentPage } from '../pages/private-content-pages/add-content/add-content';
 import { EditContentItemPage } from '../pages/private-content-pages/edit-content-item/edit-content-item';
+import { Camera } from '@ionic-native/camera';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { EditContentItemPage } from '../pages/private-content-pages/edit-content
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
