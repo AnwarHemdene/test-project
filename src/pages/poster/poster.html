@@ -1,43 +1,85 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar  color="primary">
+          <button ion-button icon-only menuToggle  >
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title> Poster une annonce</ion-title>
+    </ion-navbar> 
+  </ion-header>
+  
+  <!-- <ion-content>
+    <ion-list>
+      <ion-item class="aide" (click)="presentPrompt()">
+        <ion-thumbnail item-start>
+          <ion-icon name="md-paw"  isActive="false"></ion-icon>
+        </ion-thumbnail>
+        <h2>Animal besoin d'aide</h2>
+      </ion-item>
+      <ion-item class="foyer" (click)="presentPrompt()" >
+        <ion-thumbnail item-start>
+          <ion-icon name="ios-home"  isActive="false"></ion-icon>
+        </ion-thumbnail>
+        <h2>Animal cherchant un foyer</h2>
+      </ion-item>
+      <ion-item class="blessure" (click)="presentPrompt()" >
+        <ion-thumbnail item-start>
+          <ion-icon name="md-medkit"  isActive="false"></ion-icon>
+        </ion-thumbnail>
+        <h2>Blessure ou Maladie</h2>
+      </ion-item>
+      <ion-item class="danger" (click)="presentPrompt()" >
+        <ion-thumbnail item-start>
+          <ion-icon name="ios-nuclear"  isActive="false"></ion-icon>
+        </ion-thumbnail>
+        <h2>Animal en Danger</h2> 
+      </ion-item>
+      <ion-item class="autre" (click)="presentPrompt()" >
+        <ion-thumbnail item-start>
+           <ion-icon name="ios-alert"  isActive="false"></ion-icon>
+        </ion-thumbnail>
+        <h2>Autre</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content> -->
+  <ion-content class="card-background-page">
 
-<ion-content padding>
-  <ion-list>
-    <ion-item class="aide" (click)="presentPrompt()">
-      <ion-thumbnail item-start>
+    <ion-card>
+      <img src="assets/poster-cards/yellow.jpeg"/>
+      <div class="card-title"><ion-thumbnail item-start>
         <ion-icon name="md-paw"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Animal besoin d'aide</h2>
-    </ion-item>
-    <ion-item class="foyer" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-        <ion-icon name="ios-home"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Animal cherchant un foyer</h2>
-    </ion-item>
-    <ion-item class="blessure" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
+      </ion-thumbnail></div>
+      <div class="card-subtitle">Animal besoin d'aide</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/poster-cards/blue.jpeg"/>
+      <div class="card-title"><ion-thumbnail item-start>
+        <ion-icon name="md-home"  isActive="false"></ion-icon>
+      </ion-thumbnail></div>
+      <div class="card-subtitle">Animal cherchant un foyer</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/poster-cards/green.jpeg"/>
+      <div class="card-title"><ion-thumbnail item-start>
         <ion-icon name="md-medkit"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Blessure ou Maladie</h2>
-    </ion-item>
-    <ion-item class="danger" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-        <ion-icon name="ios-nuclear"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Animal en Danger</h2> 
-    </ion-item>
-    <ion-item class="autre" (click)="presentPrompt()" >
-      <ion-thumbnail item-start>
-         <ion-icon name="ios-alert"  isActive="false"></ion-icon>
-      </ion-thumbnail>
-      <h2>Autre</h2>
-    </ion-item>
-  </ion-list>
-
-</ion-content>
+      </ion-thumbnail></div>
+      <div class="card-subtitle">Blessure ou Maladie</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/poster-cards/red.jpeg"/>
+      <div class="card-title"><ion-thumbnail item-start>
+        <ion-icon name="md-nuclear"  isActive="false"></ion-icon>
+      </ion-thumbnail></div>
+      <div class="card-subtitle">Animal en Danger</div>
+    </ion-card>
+    <ion-card>
+      <img src="assets/poster-cards/multi.jpg"/>
+      <div class="card-title"><ion-thumbnail item-start>
+        <ion-icon name="md-alert"  isActive="false"></ion-icon>
+     </ion-thumbnail></div>
+      <div class="card-subtitle">Autres</div>
+    </ion-card>
+  </ion-content>
+  

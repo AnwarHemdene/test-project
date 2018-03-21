@@ -5,13 +5,25 @@ import { NavController , FabContainer, FabButton, AlertController} from 'ionic-a
   templateUrl: 'home.html'
 })
 export class HomePage {
+  splash=true;
 
   username: string = '';
+  tabBarElement : any;
 
   constructor(public navCtrl: NavController,
       private alertCtrl: AlertController) {
+        this.tabBarElement = document.querySelector('.tabbar');
+  }
 
-  }showAlert(title: string, message: string) {
+  ionViewDidLoad(){
+    this.tabBarElement.style.display = 'none';
+    setTimeout(() => {
+      this.splash = false;
+      this.tabBarElement.style.display = 'flex';
+    }, 4000);}
+
+
+  showAlert(title: string, message: string) {
     let alertBox = this.alertCtrl.create({
       title: title,
       subTitle: message,

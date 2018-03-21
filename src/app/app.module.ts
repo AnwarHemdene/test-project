@@ -13,6 +13,7 @@ import { MessagesPage } from '../pages/messages/messages';
 import { TabsPage } from '../pages/tabs/tabs';
 import { InscrirePage } from '../pages/inscrire/inscrire';
 // import { ChatPage } from '../pages/chat/chat';
+import{AnnonceA0Page} from '../pages/annonce-a0/annonce-a0';
 import { ProfilePage } from '../pages/profile/profile';
 import { ParamsPage } from '../pages/params/params';
  import { AngularFireModule } from 'angularfire2';
@@ -42,7 +43,8 @@ import { Camera } from '@ionic-native/camera';
     // ChatPage,
     ContentListPage,
     AddContentPage,
-    EditContentItemPage
+    EditContentItemPage,
+    AnnonceA0Page
 
   ],
   imports: [
@@ -68,7 +70,8 @@ import { Camera } from '@ionic-native/camera';
     // ChatPage,
     ContentListPage,
     AddContentPage,
-    EditContentItemPage
+    EditContentItemPage,
+    AnnonceA0Page
   ],
   providers: [
     StatusBar,

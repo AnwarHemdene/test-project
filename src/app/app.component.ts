@@ -19,6 +19,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ContentListPage } from '../pages/private-content-pages/content-list/content-list';
 import { AddContentPage } from '../pages/private-content-pages/add-content/add-content';
 import { EditContentItemPage } from '../pages/private-content-pages/edit-content-item/edit-content-item';
+import{AnnonceA0Page} from '../pages/annonce-a0/annonce-a0';
 
 
 
@@ -43,7 +44,7 @@ export class MyApp {
       { title: 'Paramètres', component: ParamsPage },
       { title: 'Se Connecter', component: LoginPage },
       { title: 'Messages', component: MessagesPage },
-      { title: 'Poster', component: PosterPage }
+      { title: 'Poster', component: AnnonceA0Page }
       ,{ title: 'Invitations', component: InvitationsPage },
       { title: 'Inscrire', component: InscrirePage },
       { title: 'Profile', component: ProfilePage },
